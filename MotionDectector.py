@@ -40,7 +40,7 @@ while True:
 
     gray = cv2.GaussianBlur(gray, (21, 21), 0)
 
-    if static_back == None:
+    if static_back is None:
         static_back = gray
         continue
 
@@ -99,7 +99,7 @@ while True:
 
     cv2.imshow("Color Frame", frame)
 
-    key = cv2.waitkey(1)
+    key = cv2.waitKey(1)
 
     # q stops entire process
 
